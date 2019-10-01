@@ -37,11 +37,17 @@ class App extends React.Component {
       duration: 5,
       discount: 5
     }
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount(){
     this.setState({ mounted: true });
   }
+
+  handleSubmit(e){}
+
+  handleChange(e){}
 
   render(){
 
@@ -52,8 +58,19 @@ class App extends React.Component {
       );
       container = (
         <Container>
-          <ImagePreview price={this.state.price} duration={this.state.duration} people={this.state.people} image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg" />
-          <Checkout duration={this.state.duration} discount={this.state.discount} tax={this.state.tax} price={this.state.price} onSubmit={this.handleSubmit} />
+          <ImagePreview 
+              price={this.state.price} 
+              duration={this.state.duration} 
+              people={this.state.people} 
+              image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg" 
+          />
+          <Checkout 
+              duration={this.state.duration} 
+              discount={this.state.discount} 
+              tax={this.state.tax} 
+              price={this.state.price} 
+              onSubmit={this.handleSubmit} 
+          />
         </Container>
       );
     }
