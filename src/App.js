@@ -2,6 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function Overlay(props){
+  return (
+    <div className="Overlay" style={{'backgroundImage':'url(' + props.image + ')'}}>
+      Something
+    </div>
+  );
+}
+
+function Container(props){
+  return (
+    <div className="Container">
+      {props.children}
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="App">
