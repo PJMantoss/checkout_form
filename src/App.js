@@ -39,6 +39,10 @@ class App extends React.Component {
     }
   }
 
+  componentDidMount(){
+    this.setState({ mounted: true });
+  }
+
   render(){
 
     let overlay, container;
@@ -53,7 +57,6 @@ class App extends React.Component {
         </Container>
       );
     }
-
 
     return (
       <div className="App">
