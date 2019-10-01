@@ -18,6 +18,14 @@ function Container(props){
   )
 }
 
+function Header(props){
+  return (
+    <header>
+      <input onChange={this.props.onChange} type="range" max="100" min="1" step="1" />
+    </header>
+  );
+}
+
 function App() {
   return (
     <div className="App">
