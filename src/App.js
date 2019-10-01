@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ImagePreview from './components/imagePreviewArea/ImagePreview';
+import Checkout from './components/checkoutArea/Checkout';
 
 function Overlay(props){
   return (
@@ -43,11 +45,19 @@ class App extends React.Component {
 
   componentDidMount(){
     this.setState({ mounted: true });
+    console.log('handle ajax submission here');
   }
 
-  handleSubmit(e){}
+  handleSubmit(e){
+    e.preventDefault();
 
-  handleChange(e){}
+  }
+
+  handleChange(e){
+    this.setState({
+      duration: e.target.value
+    });
+  }
 
   render(){
 
