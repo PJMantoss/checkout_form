@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import ImagePreview from './components/imagePreviewArea/ImagePreview';
 import Checkout from './components/checkoutArea/Checkout';
+import './App.css';
 
 function Overlay(props){
   return (
@@ -23,7 +23,7 @@ function Container(props){
 function Header(props){
   return (
     <header>
-      <input onChange={this.props.onChange} type="range" max="100" min="1" step="1" />
+      <input onChange={props.onChange} type="range" max="100" min="1" step="1" />
     </header>
   );
 }
