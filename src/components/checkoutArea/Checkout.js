@@ -15,3 +15,5 @@ function Checkout(props){
         </div>
     )
 }
+
+export default Checkout;
