@@ -27,26 +27,26 @@ function OrderSummary(props){
             <tbody>
                 <tr>
                     <td>{props.price} x {duration}</td>
-                    <td>{initialTotal} GBP</td>
+                    <td>{initialTotal} EUR</td>
                 </tr>
                 <tr>
                     <td>Discount</td>
-                    <td>{discount} GBP</td>
+                    <td>{discount} EUR</td>
                 </tr>
                 <tr>
                     <td>Subtotal</td>
-                    <td>{subTotal} GBP</td>
+                    <td>{subTotal} EUR</td>
                 </tr>
                 <tr>
                     <td>Tax</td>
-                    <td>{tax} GBP</td>
+                    <td>{tax} EUR</td>
                 </tr>
             </tbody>
             </table>
             <div className="Total">
                 <div className="TotalLabel">Total</div>
                 <div className="Amount">
-                    {total} <small>GBP</small>
+                    {total} <small>EUR</small>
             </div>
         </div>
       </div>
