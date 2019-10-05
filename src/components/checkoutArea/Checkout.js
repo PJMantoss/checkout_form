@@ -1,6 +1,6 @@
 import React from 'react';
-import OrderSummary from './components/checkoutArea/OrderSummary';
-import PaymentFormComponents from './components/checkoutArea/PaymentFormComponents';
+import OrderSummary from './OrderSummary';
+import PaymentFormComponents from './PaymentFormComponents';
 
 function Checkout(props){
     return(
