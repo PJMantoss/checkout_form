@@ -61,7 +61,7 @@ class App extends React.Component {
 
   render(){
 
-    let overlay, container;
+    const overlay, container;
     if(this.state.mounted){
       overlay = (
         <Overlay image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg" />
@@ -87,10 +87,18 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <ReactCSSTransitionGroup transitionName="overlay" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+        <ReactCSSTransitionGroup 
+           transitionName="overlay" 
+           transitionEnterTimeout={500} 
+           transitionLeaveTimeout={300}
+        >
           {overlay}
         </ReactCSSTransitionGroup>
-        <ReactCSSTransitionGroup transitionName="container" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+        <ReactCSSTransitionGroup 
+           transitionName="container" 
+           transitionEnterTimeout={500} 
+           transitionLeaveTimeout={300}
+        >
           {container}
         </ReactCSSTransitionGroup>
         <Header onChange={this.handleChange} />
