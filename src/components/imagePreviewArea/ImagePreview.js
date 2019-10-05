@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Workspace from './WorkspaceComponents';
+import * as WorkspaceComponents from './WorkspaceComponents';
 
 function ImagePreview(props) {
     return (
