@@ -4,7 +4,7 @@ import PaymentFormComponents from './PaymentFormComponents';
 
 function Checkout(props){
     return(
-        <div>
+        <div className="Checkout">
             <OrderSummary 
                 duration={props.duration} 
                 discount={props.discount} 

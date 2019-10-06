@@ -3,13 +3,13 @@
 
 body {
   background: #17183B;
-  color: white;
+  color: #17183B;
   font-family: 'Lato', sans-serif;
 }
 
 .App {
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -43,7 +43,7 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 400px;
+  height: 559px;
   max-width: 650px;
   z-index: 3;
   position: absolute;
@@ -66,7 +66,6 @@ header {
           align-items: flex-end;
   position: relative;
   width: 50%;
-  margin-right: 10px;
 }
 
 .ImagePreview::before {
@@ -186,11 +185,6 @@ header {
 .Checkout .OrderSummary .Total .Amount {
   font-size: 18px;
   margin-left: auto;
-}
-
-.Checkout .PaymentForm {
-  border-top: 10px;
-  margin-top: 10px;
 }
 
 .Checkout .Title {
@@ -371,10 +365,16 @@ header {
 }
 
 .CheckoutButton span {
-  font-size: 11px;
-  color: #bfbfbf;
+  font-size: 12px;
+  color: black;
   font-weight: 300;
   text-align: center;
+}
+
+.CheckoutButton span .icon-lock {
+  inline-size: 0%;
+  width: 2px;
+  height: 2px;
 }
 
 .overlay-enter {

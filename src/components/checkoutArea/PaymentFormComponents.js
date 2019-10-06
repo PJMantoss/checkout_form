@@ -52,7 +52,7 @@ function CheckoutButton(props){
         <div className="CheckoutButton">
             <button>Book Securely</button>
             <span>
-                <i className="fa fa-fw fa-lock"></i> 
+                <div className="icon-lock"><img src="https://img.icons8.com/android/24/000000/lock.png"/></div> 
                 Your credit card information is encrypted
             </span>
         </div>
