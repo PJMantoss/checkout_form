@@ -3,7 +3,7 @@
 
 body {
   background: #17183B;
-  color: #17183B;
+  color: white;
   font-family: 'Lato', sans-serif;
 }
 
@@ -14,10 +14,6 @@ body {
   top: 0;
   left: 0;
   background: #17183B;
-}
-
-.App-logo {
-  height: 40vmin;
 }
 
 .App .Overlay {
@@ -47,7 +43,7 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 532px;
+  height: 400px;
   max-width: 650px;
   z-index: 3;
   position: absolute;
@@ -70,6 +66,7 @@ header {
           align-items: flex-end;
   position: relative;
   width: 50%;
+  margin-right: 10px;
 }
 
 .ImagePreview::before {
@@ -189,6 +186,11 @@ header {
 .Checkout .OrderSummary .Total .Amount {
   font-size: 18px;
   margin-left: auto;
+}
+
+.Checkout .PaymentForm {
+  border-top: 10px;
+  margin-top: 10px;
 }
 
 .Checkout .Title {

@@ -20,21 +20,12 @@ function Meta(props){
   
     return (
       <div className="WorkspaceMeta">
-        <div className="Description">Entire office for <strong>{people}</strong></div>  
+        <div className="Description">Entire office for a <strong>{people}</strong></div>  
         <div className="Dates"><strong>Mon, Oct 22, 2019</strong> to <strong>Fri, Oct 29, 2019</strong></div>
       </div>
     );
 }
 
 
-function WorkspaceComponents(props) {
-    return (
-        <div>
-            <Information />
-            <Meta />
-        </div>
-    )
-}
-
-export default WorkspaceComponents;
+export { Information, Meta };
 
