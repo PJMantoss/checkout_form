@@ -224,3 +224,76 @@ header {
 .BasicInput input:focus {
   border-bottom: 1px solid #FFB49A;
 }
+
+.ExpiryDate {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+
+.ExpiryDate label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ExpiryDate div:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.ExpiryDate .Expiry {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ExpiryDate input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #17183B;
+  font-family: 'Lato', sans-serif;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  outline: none;
+}
+
+.ExpiryDate select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 10px;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  border-bottom: 1px solid #17183B;
+  border-bottom: 1px solid #17183B;
+  font-family: 'Lato', sans-serif;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  outline: none;
+  margin-right: 10px;
+}
+
+.ExpiryDate .CVCField {
+  width: 20%;
+}
