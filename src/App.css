@@ -388,3 +388,15 @@ header {
 .container-enter {
   opacity: 0.01;
 }
+
+.container-enter.container-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+.container-enter.container-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
