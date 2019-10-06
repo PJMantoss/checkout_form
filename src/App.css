@@ -358,3 +358,19 @@ header {
   padding: 10px 0;
   margin-bottom: 10px;
 }
+
+.CheckoutButton button:hover {
+  background: #ff8e67;
+}
+
+.CheckoutButton button:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.CheckoutButton span {
+  font-size: 11px;
+  color: #bfbfbf;
+  font-weight: 300;
+  text-align: center;
+}
