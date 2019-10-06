@@ -374,3 +374,14 @@ header {
   font-weight: 300;
   text-align: center;
 }
+
+.overlay-enter {
+  opacity: 0.01;
+}
+
+.overlay-enter.overlay-enter-active {
+  opacity: .2;
+  -webkit-transition: opacity .5s ease .5s;
+  transition: opacity .5s ease .5s;
+}
+
