@@ -385,3 +385,6 @@ header {
   transition: opacity .5s ease .5s;
 }
 
+.container-enter {
+  opacity: 0.01;
+}
